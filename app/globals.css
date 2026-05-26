@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', sans-serif;
+  --font-tajawal: 'Tajawal', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #050A18;
+  color: white;
+}
+
+/* Ticker pause on hover */
+.ticker-wrapper:hover .ticker-track {
+  animation-play-state: paused;
+}
