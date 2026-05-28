@@ -15,23 +15,78 @@ const tajawal = Tajawal({
   display: 'swap',
 })
 
+const APP_URL = 'https://falakeg.com'
+
+const DESCRIPTION =
+  'Falak builds practical software for Egypt — Waslny (WhatsApp order management for shops), CV Builder (Arabic & English CVs for Gulf jobs), and TYT (a local task marketplace).'
+
 export const metadata: Metadata = {
-  title: 'Falak — Tools that move Egypt forward',
-  description:
-    'A growing suite of products built for Egyptian shop owners, job seekers, and workers.',
-  keywords: ['Egypt', 'SaaS', 'marketplace', 'CV builder', 'order management', 'Arabic'],
-  openGraph: {
-    title: 'Falak — Tools that move Egypt forward',
-    description:
-      'A growing suite of products built for Egyptian shop owners, job seekers, and workers.',
-    type: 'website',
+  metadataBase: new URL(APP_URL),
+  title: {
+    default: 'Falak — Tools that move Egypt forward',
+    template: '%s · Falak',
   },
+  description: DESCRIPTION,
+  applicationName: 'Falak',
+  keywords: [
+    'Falak',
+    'فلك',
+    'Egypt SaaS',
+    'Waslny',
+    'CV Builder',
+    'TYT',
+    'marketplace Egypt',
+    'order management',
+    'Arabic CV',
+  ],
+  authors: [{ name: 'Falak' }],
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    siteName: 'Falak',
+    title: 'Falak — Tools that move Egypt forward',
+    description: DESCRIPTION,
+    url: APP_URL,
+    locale: 'en_US',
+    alternateLocale: 'ar_EG',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Falak — Tools that move Egypt forward',
+    description: DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+}
+
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Falak',
+  alternateName: 'فلك',
+  url: APP_URL,
+  description: DESCRIPTION,
+  email: 'contact@falakeg.com',
+  areaServed: 'EG',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${inter.variable} ${tajawal.variable} font-sans antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
         {children}
       </body>
     </html>

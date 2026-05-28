@@ -68,9 +68,32 @@ const tickerItems = [
   ...products.map((p) => `${p.emoji}  ${p.name}  ·`),
 ]
 
+const productsJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Falak products',
+  itemListElement: products.map((p, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    item: {
+      '@type': 'SoftwareApplication',
+      name: p.name,
+      alternateName: p.nameAr,
+      description: p.description,
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      url: p.url,
+    },
+  })),
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#050A18] text-white overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productsJsonLd) }}
+      />
 
       {/* ─── Fixed background effects ─── */}
       <div className="fixed inset-0 pointer-events-none select-none" aria-hidden>
@@ -287,7 +310,7 @@ export default function Home() {
           {/* Brand */}
           <div className="flex items-center gap-2.5">
             <div className="w-5 h-5 rounded-full bg-gradient-to-br from-indigo-500 to-violet-700 opacity-70 flex-shrink-0" />
-            <span className="text-white/30 text-sm font-medium">Falak © 2025</span>
+            <span className="text-white/30 text-sm font-medium">Falak © {new Date().getFullYear()}</span>
           </div>
           {/* Made in Egypt */}
           <span className="text-white/20 text-sm">Made with ❤️ in Egypt 🇪🇬</span>
