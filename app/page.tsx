@@ -22,7 +22,7 @@ const products = [
     categoryColor: 'text-emerald-500/50',
   },
   {
-    name: 'CV Builder',
+    name: 'CV Architect',
     nameAr: 'بناء السيرة الذاتية',
     tagline: 'Gulf-ready CVs in minutes.',
     description:
@@ -49,7 +49,7 @@ const products = [
     features: ['Verified helpers', 'Escrow payments', 'In-chat bidding', 'KYC + background check'],
     category: 'Marketplace · Gig Economy',
     emoji: '⚡',
-    url: 'https://tyt-osakr6604-creates-projects.vercel.app',
+    url: 'https://tyt-azure.vercel.app',
     textClass: 'text-violet-400',
     borderClass: 'border-violet-500/20',
     hoverBorderClass: 'hover:border-violet-500/40',
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
           {/* Right side */}
           <a
-            href={`mailto:osakr6604@gmail.com`}
+            href="mailto:contact@falakeg.com"
             className="hidden sm:flex items-center gap-1.5 text-sm text-white/30 hover:text-white/60 transition-colors"
           >
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">

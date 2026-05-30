@@ -39,7 +39,7 @@ export default function Image() {
           Tools that move Egypt forward
         </div>
         <div style={{ display: 'flex', gap: '16px', marginTop: '56px' }}>
-          {['Waslny', 'CV Builder', 'TYT'].map((name) => (
+          {['Waslny', 'CV Architect', 'TYT'].map((name) => (
             <div
               key={name}
               style={{

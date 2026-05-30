@@ -18,7 +18,7 @@ const tajawal = Tajawal({
 const APP_URL = 'https://falakeg.com'
 
 const DESCRIPTION =
-  'Falak builds practical software for Egypt — Waslny (WhatsApp order management for shops), CV Builder (Arabic & English CVs for Gulf jobs), and TYT (a local task marketplace).'
+  'Falak builds practical software for Egypt — Waslny (WhatsApp order management for shops), CV Architect (Arabic & English CVs for Gulf jobs), and TYT (a local task marketplace).'
 
 export const metadata: Metadata = {
   metadataBase: new URL(APP_URL),
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     'فلك',
     'Egypt SaaS',
     'Waslny',
-    'CV Builder',
+    'CV Architect',
     'TYT',
     'marketplace Egypt',
     'order management',
