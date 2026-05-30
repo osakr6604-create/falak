@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 
-// ─── Update these URLs once Waslny + TYT Vercel URLs are confirmed ───
 const products = [
   {
     name: 'Waslny',
@@ -11,7 +10,7 @@ const products = [
     features: ['Order management', 'Customer tracking', 'Mandoob routing', 'Arabic PWA'],
     category: 'B2B · Shop Management',
     emoji: '💬',
-    url: 'https://waslny-lyart.vercel.app',
+    url: 'https://waslny.falakeg.com',
     textClass: 'text-emerald-400',
     borderClass: 'border-emerald-500/20',
     hoverBorderClass: 'hover:border-emerald-500/40',
@@ -30,7 +29,7 @@ const products = [
     features: ['4 professional templates', 'Arabic + English RTL', 'Instant PDF export', 'Gulf-optimized'],
     category: 'Consumer · Career',
     emoji: '📄',
-    url: 'https://cv-builder-lovat-one.vercel.app',
+    url: 'https://cv.falakeg.com',
     textClass: 'text-amber-400',
     borderClass: 'border-amber-500/20',
     hoverBorderClass: 'hover:border-amber-500/40',
@@ -41,15 +40,15 @@ const products = [
     categoryColor: 'text-amber-500/50',
   },
   {
-    name: 'TYT',
-    nameAr: 'خذ مهمتك',
+    name: '5alsana',
+    nameAr: 'خلصنا',
     tagline: "Egypt's local task marketplace.",
     description:
       'Connect verified local helpers with people who need cleaning, repairs, moving, and more — with KYC verification, escrow payments, and in-chat bidding.',
     features: ['Verified helpers', 'Escrow payments', 'In-chat bidding', 'KYC + background check'],
     category: 'Marketplace · Gig Economy',
     emoji: '⚡',
-    url: 'https://tyt-azure.vercel.app',
+    url: 'https://5alsana.falakeg.com',
     textClass: 'text-violet-400',
     borderClass: 'border-violet-500/20',
     hoverBorderClass: 'hover:border-violet-500/40',
