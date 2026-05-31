@@ -25,8 +25,8 @@ const products = [
     nameAr: 'بناء السيرة الذاتية',
     tagline: 'Gulf-ready CVs in minutes.',
     description:
-      'Build professional Arabic and English CVs tailored for Egyptians applying to Gulf opportunities. Four templates, PDF export, and a freemium model.',
-    features: ['4 professional templates', 'Arabic + English RTL', 'Instant PDF export', 'Gulf-optimized'],
+      'Build professional Arabic and English CVs tailored for Egyptians applying to Gulf opportunities. Professional templates, PDF export, and a freemium model.',
+    features: ['Professional templates', 'Arabic + English RTL', 'Instant PDF export', 'Gulf-optimized'],
     category: 'Consumer · Career',
     emoji: '📄',
     url: 'https://cv.falakeg.com',
