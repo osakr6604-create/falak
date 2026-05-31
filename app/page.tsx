@@ -123,12 +123,20 @@ export default function Home() {
         <div className="w-full max-w-6xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <div className="relative w-8 h-8 flex-shrink-0">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-indigo-500 to-violet-700 blur-sm opacity-80" />
-              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-indigo-500 to-violet-700 flex items-center justify-center text-[13px] font-black tracking-tight shadow-lg">
-                F
-              </div>
-            </div>
+            <svg width="32" height="32" viewBox="0 0 64 64" className="flex-shrink-0" aria-hidden="true">
+              <defs>
+                <linearGradient id="falakMark" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stopColor="#818cf8" />
+                  <stop offset="1" stopColor="#7c3aed" />
+                </linearGradient>
+              </defs>
+              <rect width="64" height="64" rx="16" fill="#0b1020" />
+              <ellipse cx="32" cy="32" rx="23" ry="9" fill="none" stroke="#454a7a" strokeWidth="2.5" transform="rotate(-25 32 32)" />
+              <circle cx="32" cy="32" r="9" fill="url(#falakMark)" />
+              <circle cx="53" cy="22" r="3.5" fill="#22c55e" />
+              <circle cx="11" cy="42" r="3.5" fill="#f59e0b" />
+              <path d="M49 45 L50 48 L53 49 L50 50 L49 53 L48 50 L45 49 L48 48 Z" fill="#ffffff" opacity="0.85" />
+            </svg>
             <div className="flex items-baseline gap-2">
               <span className="font-bold text-[17px] tracking-tight">Falak</span>
               <span className="text-white/20 text-sm font-arabic leading-none">فلك</span>
